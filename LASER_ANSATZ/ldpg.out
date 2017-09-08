@@ -1,0 +1,93 @@
+                    
+                    
+                    
+ // ------ THE LASER PROBLEM ------ //
+                    
+                    
+                    
+ -- hp3d Control Parameters --
+ INT. LEGENDRE POLYNOMIALS USED
+ EXACT SOLUTION UNKNOWN
+ UNSYMMETRIC PROBLEM
+ GAUSSIAN QUADRATURE (VOLUME LOAD)
+ GAUSSIAN QUADRATURE (NEUMANN BC)
+ EXTENSION OPERATOR NOT SUPPORTED
+ DEFAULT FORMAT
+ GEOMETRY TOLERANCE =  0.10000E-05
+ INTEGRATION        = 0
+ ISOPARAMETRIC ELEMENTS
+ 
+ -- input_DEFAULT --
+ NRSURFS =     2 ; reading surfaces...
+ NRPOINT =    18 ; reading points...
+ NRCURVE =    41 ; reading curves...
+ NRTRIAN =     8 ; reading triangles...
+ NRRECTA =    24 ; reading rectangles...
+ NRPRISM =     4 ; reading prisms...
+ NRHEXAS =     4 ; reading hexas...
+ NRTETRA =     0 ; reading tets...
+ NRPYRAM =     0 ; reading pyramids...
+ 
+ -- GMP Parameters --
+ NDIM,MANDIM   =         3          3
+ NRSURFS,MAXSU =         2         30
+ NRPOINT,MAXNP =        18        500
+ NRCURVE,MAXNC =        41        600
+ NRTRIAN,MAXTR =         8        100
+ NRRECTA,MAXRE =        24        100
+ NRPRISM,MAXBT =         4        100
+ NRHEXAS,MAXHE =         4         50
+ NRTETRA,MAXTE =         0        165
+ NRPYRAM,MAXPY =         0         10
+ 
+ -- Physics --
+ MAXNODS =      5000000
+ PHYSA,DTYPE,NR_COMP = tempr  contin  1
+ PHYSA,DTYPE,NR_COMP = EHhat  tangen  2
+ PHYSA,DTYPE,NR_COMP = hflux  normal  1
+ PHYSA,DTYPE,NR_COMP = EHfld  discon  6
+ 
+ GEOM_NO =            3
+ GEOM_NO =            3
+ GEOM_NO =            3
+ GEOM_NO =            3
+ GEOM_NO =            3
+ GEOM_NO =            3
+ GEOM_NO =            3
+ GEOM_NO =            3
+ update_gdof: nr_up_elem =      8
+ update_gdof: nr_up_elem =      0
+ =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ Quit ...................................0
+                                          
+ Geometry graphics (X11) ................1
+ HP3D graphics (X11) ....................3
+ Paraview ...............................4
+ Print Data Structure arrays ............5
+ DumpOut Data Structure .................7
+ DumpIn Data Structure  .................8
+                                          
+  --  Geometry & Refinements  --          
+ Geometry error ........................12
+ Interactive H-refinements .............31
+ Uniform     H-refinements .............32
+ Adaptive    H-refinements .............33
+ Anisotropic H-refinements .............34
+                                          
+ Solve (frontal) .......................40
+ Solve (MUMPS) .........................50
+ Solve (UHM) ...........................60
+                                          
+ Compute H1 error .....................100
+ Compute L2 error .....................101
+ Compute residual .....................110
+ Compute geometry error................111
+ Adaptive DPG refinements .............120
+ Compute BC data interpolation error...130
+                                          
+ Uniform refinments rate tests.........140
+ Uniform geometry error rate tests.....141
+ 2 uniform n anisotropic refinements...142
+ My tests..... ........................200
+ Test gain function....................201
+ =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

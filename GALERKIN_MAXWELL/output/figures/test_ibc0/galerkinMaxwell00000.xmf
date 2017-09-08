@@ -1,0 +1,13 @@
+<Xdmf xmlns:xi='http://www.w3.org/2003/XInclude' Version='2.1'>
+  <Domain>
+    <Grid Name='Geometry' GridType='Uniform'>
+      <Topology TopologyType='Mixed' NumberOfElements='   32768'>
+        <DataItem Dimensions='  294912' NumberType='Int' Precision='4' Format='HDF'>
+        galerkinMaxwellgeom_00000.h5:/Objects
+        </DataItem>
+      </Topology>
+      <Geometry GeometryType='XYZ'>
+        <DataItem Dimensions='   64000 3' NumberType='Float' Precision='4' Format='HDF'>
+        galerkinMaxwellgeom_00000.h5:/Coords
+        </DataItem>
+      </Geometry>

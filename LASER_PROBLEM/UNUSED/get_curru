@@ -1,0 +1,54 @@
+subroutine get_curru(Mdle,dxidx,shapH,gradH,nrdofH, U,GradU)
+  use control
+  use assembly
+  !use input_param
+  use parameters
+  use data_structure3D
+  !use primal_heat_module_DPGH1
+
+
+  implicit none
+!------------------------------------------------------------------------------
+  integer,                   intent(in)  :: Mdle
+  real*8, dimension(3,3),    intent(in)  :: dxidx
+  ! H1 shape functions
+  real*8, dimension(  MAXbrickH), intent(in)  :: shapH
+  real*8, dimension(3,MAXbrickH), intent(in)  :: gradH
+  integer, intent(in)                         :: nrdofH
+
+  real*8, intent(out)                    :: U
+  real*8, intent(out), dimension(3)      :: GradU
+  !
+  real*8, dimension(MAXEQNH,MAXbrickH)   :: zdofH
+  real*8, dimension(MAXEQNE,MAXbrickE)   :: zdofE
+  real*8, dimension(MAXEQNV,MAXbrickV)   :: zdofV
+  real*8, dimension(MAXEQNQ,MAXbrickQ)   :: zdofQ
+
+  integer k
+
+
+  ! First call solelm to determine current DOF's
+  call solelm(Mdle, zdofH,zdofE,zdofV,zdofQ)
+
+  ! evalute the H1 solution
+  U = ZERO
+  GradU = ZERO
+  !
+  ! loop through H1 trial functions
+  do k=1,nrdofH
+    U = U+zdofH(1,k)*shapH(k)
+
+    GradU(1) = GradU(1)+ zdofH(1,k)*gradH(1,k)*dxidx(1,1) &
+    +zdofH(1,k)*gradH(2,k)*dxidx(2,1)&
+    +zdofH(1,k)*gradH(3,k)*dxidx(3,1)
+
+    GradU(2) = GradU(2)+ zdofH(1,k)*gradH(1,k)*dxidx(1,2) &
+    +zdofH(1,k)*gradH(2,k)*dxidx(2,2)&
+    +zdofH(1,k)*gradH(3,k)*dxidx(3,2)
+
+    GradU(3) = GradU(3)+ zdofH(1,k)*gradH(1,k)*dxidx(1,3) &
+    +zdofH(1,k)*gradH(2,k)*dxidx(2,3)&
+    +zdofH(1,k)*gradH(3,k)*dxidx(3,3)
+  enddo
+
+end subroutine get_curru

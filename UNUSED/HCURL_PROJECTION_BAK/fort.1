@@ -1,0 +1,136 @@
+
+***********CONTROL PARAMETERS (ICNTL)**************
+
+ICNTL(1)   Output stream for error messages        =         1
+ICNTL(2)   Output stream for diagnostic messages   =         1
+ICNTL(3)   Output stream for global information    =         6
+ICNTL(4)   Level of printing                       =         3
+ICNTL(5)   Matrix format  ( keep(55) )             =         0
+ICNTL(6)   Maximum transversal  ( keep(23) )       =         0
+ICNTL(7)   Ordering                                =         5
+ICNTL(12)  LDLT ordering strat ( keep(95) )        =         1
+ICNTL(13)  Parallel root (0=on, 1=off)             =         0
+ICNTL(18)  Distributed matrix  ( keep(54) )        =         0
+ICNTL(19)  Schur option ( keep(60) 0=off,else=on ) =         0
+ICNTL(22)  Out-off-core option (0=Off, >0=ON)      =         0
+ICNTL(14)  Percent of memory increase              =       100
+L U Solver for unsymmetric matrices
+Type of parallelism: Working host
+
+ ****** ANALYSIS STEP ********
+
+ ... Structural symmetry (in percent)=  100
+ Estimated INTEGER space for factors         :       689
+ INFO(3), est. complex space to store factors:     30189
+ Estimated number of entries in factors      :     30189
+ Current value of space relaxation parameter :       100
+ Estimated size of IS (In Core factorization):      2309
+ Estimated size of S  (In Core factorization):     89385
+ Estimated size of S  (OOC factorization)    :    103593
+ Estimated space in MBYTES for IC factorization            :         3
+
+***********CONTROL PARAMETERS (ICNTL)**************
+
+ICNTL(1)   Output stream for error messages        =         1
+ICNTL(2)   Output stream for diagnostic messages   =         1
+ICNTL(3)   Output stream for global information    =         6
+ICNTL(4)   Level of printing                       =         3
+ICNTL(5)   Matrix format  ( keep(55) )             =         0
+ICNTL(6)   Maximum transversal  ( keep(23) )       =         0
+ICNTL(7)   Ordering                                =         5
+ICNTL(12)  LDLT ordering strat ( keep(95) )        =         1
+ICNTL(13)  Parallel root (0=on, 1=off)             =         0
+ICNTL(18)  Distributed matrix  ( keep(54) )        =         0
+ICNTL(19)  Schur option ( keep(60) 0=off,else=on ) =         0
+ICNTL(22)  Out-off-core option (0=Off, >0=ON)      =         0
+ICNTL(14)  Percent of memory increase              =       100
+
+***********CONTROL PARAMETERS (ICNTL)**************
+
+ICNTL(1)   Output stream for error messages        =         1
+ICNTL(2)   Output stream for diagnostic messages   =         1
+ICNTL(3)   Output stream for global information    =         6
+ICNTL(4)   Level of printing                       =         3
+ICNTL(8)   Scaling strategy                        =         0
+ICNTL(14)  Percent of memory increase              =       100
+
+ ****** FACTORIZATION STEP ********
+
+
+ Allocated buffers
+ ------------------
+ Size of reception buffer in bytes ...... =     300000
+ Size of async. emission buffer (bytes).. =     300012
+ Small emission buffer (bytes) .......... =         20
+
+ STATISTICS PRIOR NUMERICAL FACTORIZATION ...
+ Size of internal working array S         =         89385
+ Size of internal working array IS        =          2309
+ MINIMUM (ICNTL(14)=0) size of S          =         44685
+ MINIMUM (ICNTL(14)=0) size of IS         =           709
+ REAL SPACE FOR ORIGINAL MATRIX           =         15446
+ INTEGER SPACE FOR ORIGINAL MATRIX        =         15824
+ REAL SPACE FOR FACTORS                   =         30189
+ INTEGER SPACE FOR FACTORS                =           689
+ MAXIMUM FRONTAL SIZE (ESTIMATED)         =           151
+ ** Space in MBYTES used during factorization  :         3
+
+ LEAVING FACTORIZATION PHASE WITH ...
+ INFO (1)                                      =              0
+  --- (2)                                      =              0
+           NUMBER OF NODES IN THE TREE         =              3
+ INFO (9)  REAL SPACE FOR FACTORS              =          30189
+  --- (10) INTEGER SPACE FOR FACTORS           =            689
+  --- (11) MAXIMUM SIZE OF FRONTAL MATRICES    =            151
+  --- (12) NUMBER OF OFF DIAGONAL PIVOTS       =              0
+  --- (13) NUMBER OF DELAYED PIVOTS            =              0
+  --- (14) NUMBER OF MEMORY COMPRESSES         =              0
+  --- (25) NUMBER OF ENTRIES IN FACTORS        =              0
+ RINFO(2)  OPERATIONS DURING NODE ASSEMBLY     = 1.004D+04
+ -----(3)  OPERATIONS DURING NODE ELIMINATION  = 3.043D+06
+ ** Effective minimum Space in MBYTES for facto  :         2
+
+***********CONTROL PARAMETERS (ICNTL)**************
+
+ICNTL(1)   Output stream for error messages        =         1
+ICNTL(2)   Output stream for diagnostic messages   =         1
+ICNTL(3)   Output stream for global information    =         6
+ICNTL(4)   Level of printing                       =         3
+ICNTL(8)   Scaling strategy                        =         0
+ICNTL(14)  Percent of memory increase              =       100
+
+***********CONTROL PARAMETERS (ICNTL)**************
+
+ICNTL(1)   Output stream for error messages        =         1
+ICNTL(2)   Output stream for diagnostic messages   =         1
+ICNTL(3)   Output stream for global information    =         6
+ICNTL(4)   Level of printing                       =         3
+ICNTL(9)   Solve A x=b (1) or A'x = b (else)       =         1
+ICNTL(10)  Max steps iterative refinement          =         0
+ICNTL(11)  Error analysis ( 0= off, else=on)       =         0
+ICNTL(20)  Dense (0) or sparse (1) RHS             =         0
+ICNTL(21)  Gathered (0) or distributed(1) solution =         0
+
+
+ ****** SOLVE & CHECK STEP ********
+
+
+
+ LEAVING SOLVE (MPI41C) WITH
+ RHS    (first column)
+  -3.874538D-12  0.000000D+00 -6.548992D-12  0.000000D+00  1.474089D-12
+   0.000000D+00 -1.433014D-12  0.000000D+00  3.303116D-12  0.000000D+00
+   1.507715D-12  0.000000D+00  7.111045D-10  0.000000D+00  8.241895D-12
+   0.000000D+00 -2.811595D-10  0.000000D+00  8.747567D-10  0.000000D+00
+
+***********CONTROL PARAMETERS (ICNTL)**************
+
+ICNTL(1)   Output stream for error messages        =         1
+ICNTL(2)   Output stream for diagnostic messages   =         1
+ICNTL(3)   Output stream for global information    =         6
+ICNTL(4)   Level of printing                       =         3
+ICNTL(9)   Solve A x=b (1) or A'x = b (else)       =         1
+ICNTL(10)  Max steps iterative refinement          =         0
+ICNTL(11)  Error analysis ( 0= off, else=on)       =         0
+ICNTL(20)  Dense (0) or sparse (1) RHS             =         0
+ICNTL(21)  Gathered (0) or distributed(1) solution =         0

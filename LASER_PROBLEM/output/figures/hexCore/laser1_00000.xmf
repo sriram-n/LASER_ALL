@@ -1,0 +1,116 @@
+<Xdmf xmlns:xi='http://www.w3.org/2003/XInclude' Version='2.1'>
+  <Domain>
+    <Grid Name='Geometry' GridType='Uniform'>
+      <Topology TopologyType='Mixed' NumberOfElements='      64'>
+        <DataItem Dimensions='     576' NumberType='Int' Precision='4' Format='HDF'>
+        laser1_geom_00000.h5:/Objects
+        </DataItem>
+      </Topology>
+      <Geometry GeometryType='XYZ'>
+        <DataItem Dimensions='     125 3' NumberType='Float' Precision='4' Format='HDF'>
+        laser1_geom_00000.h5:/Coords
+        </DataItem>
+      </Geometry>
+      <Attribute Name='tempr_comp_01_load_01_real' AttributeType='Scalar' Center='Node'>
+        <DataItem Dimensions='     125 1' NumberType='Float' Precision='4' Format='HDF'>
+        laser1_scalar_tempr_comp_01_load_01_real_00000.h5:tempr_comp_01_load_01_real
+        </DataItem>
+      </Attribute>
+      <Attribute Name='tempr_comp_01_load_01_imag' AttributeType='Scalar' Center='Node'>
+        <DataItem Dimensions='     125 1' NumberType='Float' Precision='4' Format='HDF'>
+        laser1_scalar_tempr_comp_01_load_01_imag_00000.h5:tempr_comp_01_load_01_imag
+        </DataItem>
+      </Attribute>
+      <Attribute Name='EHhat_vec_comp_01_load_01_real' AttributeType='Vector' Center='Node'>
+        <DataItem Dimensions='         125 3' NumberType='Float' Precision='4' Format='HDF'>
+        laser1_vector_EHhat_vec_comp_01_load_01_real_00000.h5:EHhat_vec_comp_01_load_01_real
+        </DataItem>
+      </Attribute>
+      <Attribute Name='EHhat_comp_01_load_01_imag' AttributeType='Vector' Center='Node'>
+        <DataItem Dimensions='         125 3' NumberType='Float' Precision='4' Format='HDF'>
+        laser1_vector_EHhat_comp_01_load_01_imag_00000.h5:EHhat_comp_01_load_01_imag
+        </DataItem>
+      </Attribute>
+      <Attribute Name='EHhat_vec_comp_02_load_01_real' AttributeType='Vector' Center='Node'>
+        <DataItem Dimensions='         125 3' NumberType='Float' Precision='4' Format='HDF'>
+        laser1_vector_EHhat_vec_comp_02_load_01_real_00000.h5:EHhat_vec_comp_02_load_01_real
+        </DataItem>
+      </Attribute>
+      <Attribute Name='EHhat_comp_02_load_01_imag' AttributeType='Vector' Center='Node'>
+        <DataItem Dimensions='         125 3' NumberType='Float' Precision='4' Format='HDF'>
+        laser1_vector_EHhat_comp_02_load_01_imag_00000.h5:EHhat_comp_02_load_01_imag
+        </DataItem>
+      </Attribute>
+      <Attribute Name='hflux_vec_comp_01_load_01_real' AttributeType='Vector' Center='Node'>
+        <DataItem Dimensions='         125 3' NumberType='Float' Precision='4' Format='HDF'>
+        laser1_vector_hflux_vec_comp_01_load_01_real_00000.h5:hflux_vec_comp_01_load_01_real
+        </DataItem>
+      </Attribute>
+      <Attribute Name='hflux_comp_01_load_01_imag' AttributeType='Vector' Center='Node'>
+        <DataItem Dimensions='         125 3' NumberType='Float' Precision='4' Format='HDF'>
+        laser1_vector_hflux_comp_01_load_01_imag_00000.h5:hflux_comp_01_load_01_imag
+        </DataItem>
+      </Attribute>
+      <Attribute Name='EHfld_comp_01_load_01_real' AttributeType='Scalar' Center='Node'>
+        <DataItem Dimensions='     125 1' NumberType='Float' Precision='4' Format='HDF'>
+        laser1_scalar_EHfld_comp_01_load_01_real_00000.h5:EHfld_comp_01_load_01_real
+        </DataItem>
+      </Attribute>
+      <Attribute Name='EHfld_comp_01_load_01_imag' AttributeType='Scalar' Center='Node'>
+        <DataItem Dimensions='     125 1' NumberType='Float' Precision='4' Format='HDF'>
+        laser1_scalar_EHfld_comp_01_load_01_imag_00000.h5:EHfld_comp_01_load_01_imag
+        </DataItem>
+      </Attribute>
+      <Attribute Name='EHfld_comp_02_load_01_real' AttributeType='Scalar' Center='Node'>
+        <DataItem Dimensions='     125 1' NumberType='Float' Precision='4' Format='HDF'>
+        laser1_scalar_EHfld_comp_02_load_01_real_00000.h5:EHfld_comp_02_load_01_real
+        </DataItem>
+      </Attribute>
+      <Attribute Name='EHfld_comp_02_load_01_imag' AttributeType='Scalar' Center='Node'>
+        <DataItem Dimensions='     125 1' NumberType='Float' Precision='4' Format='HDF'>
+        laser1_scalar_EHfld_comp_02_load_01_imag_00000.h5:EHfld_comp_02_load_01_imag
+        </DataItem>
+      </Attribute>
+      <Attribute Name='EHfld_comp_03_load_01_real' AttributeType='Scalar' Center='Node'>
+        <DataItem Dimensions='     125 1' NumberType='Float' Precision='4' Format='HDF'>
+        laser1_scalar_EHfld_comp_03_load_01_real_00000.h5:EHfld_comp_03_load_01_real
+        </DataItem>
+      </Attribute>
+      <Attribute Name='EHfld_comp_03_load_01_imag' AttributeType='Scalar' Center='Node'>
+        <DataItem Dimensions='     125 1' NumberType='Float' Precision='4' Format='HDF'>
+        laser1_scalar_EHfld_comp_03_load_01_imag_00000.h5:EHfld_comp_03_load_01_imag
+        </DataItem>
+      </Attribute>
+      <Attribute Name='EHfld_comp_04_load_01_real' AttributeType='Scalar' Center='Node'>
+        <DataItem Dimensions='     125 1' NumberType='Float' Precision='4' Format='HDF'>
+        laser1_scalar_EHfld_comp_04_load_01_real_00000.h5:EHfld_comp_04_load_01_real
+        </DataItem>
+      </Attribute>
+      <Attribute Name='EHfld_comp_04_load_01_imag' AttributeType='Scalar' Center='Node'>
+        <DataItem Dimensions='     125 1' NumberType='Float' Precision='4' Format='HDF'>
+        laser1_scalar_EHfld_comp_04_load_01_imag_00000.h5:EHfld_comp_04_load_01_imag
+        </DataItem>
+      </Attribute>
+      <Attribute Name='EHfld_comp_05_load_01_real' AttributeType='Scalar' Center='Node'>
+        <DataItem Dimensions='     125 1' NumberType='Float' Precision='4' Format='HDF'>
+        laser1_scalar_EHfld_comp_05_load_01_real_00000.h5:EHfld_comp_05_load_01_real
+        </DataItem>
+      </Attribute>
+      <Attribute Name='EHfld_comp_05_load_01_imag' AttributeType='Scalar' Center='Node'>
+        <DataItem Dimensions='     125 1' NumberType='Float' Precision='4' Format='HDF'>
+        laser1_scalar_EHfld_comp_05_load_01_imag_00000.h5:EHfld_comp_05_load_01_imag
+        </DataItem>
+      </Attribute>
+      <Attribute Name='EHfld_comp_06_load_01_real' AttributeType='Scalar' Center='Node'>
+        <DataItem Dimensions='     125 1' NumberType='Float' Precision='4' Format='HDF'>
+        laser1_scalar_EHfld_comp_06_load_01_real_00000.h5:EHfld_comp_06_load_01_real
+        </DataItem>
+      </Attribute>
+      <Attribute Name='EHfld_comp_06_load_01_imag' AttributeType='Scalar' Center='Node'>
+        <DataItem Dimensions='     125 1' NumberType='Float' Precision='4' Format='HDF'>
+        laser1_scalar_EHfld_comp_06_load_01_imag_00000.h5:EHfld_comp_06_load_01_imag
+        </DataItem>
+      </Attribute>
+    </Grid>
+  </Domain>
+</Xdmf>

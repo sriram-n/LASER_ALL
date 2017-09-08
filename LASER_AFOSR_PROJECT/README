@@ -1,0 +1,11 @@
+P. Gatto, Jan 2015.
+
+Minor polishing of DPG project. Added call to Paraview graphics. If you run
+into trouble with compiling/linking/running, see src/graphics/paraview/README.
+
+Main drivers are:
+
+  ./poissonDPG.sh   --> DPG for Poisson problem
+  ./reac_diffDPG.sh --> DPG for reaction-diffusion problem
+
+Run ./help.sh for a list of all the parameters accepted by the executable.
